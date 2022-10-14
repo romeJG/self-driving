@@ -1,9 +1,15 @@
 class Car {
+
+    //constructor of the class Car has 4 params
+    //params are x,y,width,height
     constructor(x, y, width, height) {
         this.x = x;
         this.y = y;
         this.width = width;
         this.height = height;
+
+        //constructs a controll
+        this.controls = new Controls();
     }
     draw(ctx) {
         ctx.beginPath();
